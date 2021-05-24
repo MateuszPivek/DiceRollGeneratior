@@ -1,4 +1,4 @@
-package pl.sda.project.view.console;
+package pl.sda.project.view.core;
 
 import pl.sda.project.view.core.MenuItem;
 

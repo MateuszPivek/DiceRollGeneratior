@@ -1,5 +1,4 @@
-package pl.sda.project.view.console;
-import pl.sda.project.view.console.ConsoleView;
+package pl.sda.project.view.core;
 
 
 public class ConsoleLooper {

@@ -1,4 +1,4 @@
-package pl.sda.project.view.console;
+package pl.sda.project.view.core;
 
 import java.io.IOException;
 import java.io.InputStream;

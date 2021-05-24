@@ -1,4 +1,4 @@
-package pl.sda.project.view.console.domain;
+package pl.sda.project.view.domain;
 
 import pl.sda.project.domain.NewQuiz;
 

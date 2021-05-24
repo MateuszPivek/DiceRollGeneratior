@@ -2,10 +2,13 @@ package pl.sda.project.controller;
 
 import pl.sda.project.domain.UserAnswer;
 import pl.sda.project.service.QuizService;
-import pl.sda.project.view.console.*;
-import pl.sda.project.view.console.Menu;
+import pl.sda.project.view.core.ConsoleLooper;
+import pl.sda.project.view.core.ConsoleView;
+import pl.sda.project.view.core.Menu;
 import pl.sda.project.view.core.MenuItem;
 import pl.sda.project.view.console.domain.*;
+import pl.sda.project.view.domain.FillQuizByUserFromConsole;
+import pl.sda.project.view.domain.InputNewQuizFromConsole;
 
 import java.util.Optional;
 import java.util.Scanner;
