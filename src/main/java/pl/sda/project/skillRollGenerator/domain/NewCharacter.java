@@ -10,6 +10,6 @@ import lombok.Data;
         private String characterName;
         private String characterLastname;
         private int characterAge;
-        private int[] attributes;
-        private int[] skills;
+        private Integer[] attributes;
+        private Integer[] skills;
 }

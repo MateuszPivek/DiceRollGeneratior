@@ -3,12 +3,13 @@ package pl.sda.project.skillRollGenerator.mapper;
 import pl.sda.project.skillRollGenerator.domain.NewCharacter;
 import pl.sda.project.skillRollGenerator.entity.CharacterEntity;
 
-public class CharacterMapper {
+public enum CharacterMapper {
+    INSTANCE;
 
 
     public CharacterEntity toEntity (NewCharacter newCharacter){
-        int[] attributes = newCharacter.getAttributes();
-        int[] skills = newCharacter.getSkills();
+        Integer[] attributes = newCharacter.getAttributes();
+        Integer[] skills = newCharacter.getSkills();
         return CharacterEntity.builder()
                 .playerName(newCharacter.getPlayerName())
                 .characterName(newCharacter.getCharacterName())
