@@ -6,12 +6,14 @@ import pl.sda.project.view.core.ConsoleLooper;
 import pl.sda.project.view.core.ConsoleView;
 import pl.sda.project.view.core.Menu;
 import pl.sda.project.view.core.MenuItem;
-import pl.sda.project.view.console.domain.*;
 import pl.sda.project.view.domain.FillQuizByUserFromConsole;
 import pl.sda.project.view.domain.InputNewQuizFromConsole;
+import pl.sda.project.view.domain.PrintAllQuizFromConsole;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class QuizController {
     private final ConsoleLooper looper;
@@ -42,6 +44,23 @@ public class QuizController {
                     });
                 })
         ));
+
+        menu.addMenuItem(new MenuItem(
+                "Wyświetl wszystkie quizy",
+                () -> {
+                    PrintAllQuizFromConsole printAllQuizFromConsole = new PrintAllQuizFromConsole(quizService.findAll());
+                    printAllQuizFromConsole.print();
+                }
+        ));
+
+//        menu.addMenuItem(new MenuItem(
+//                "Wyświetl quiz o podanym id",
+//                () -> AskUserForQuizIdFromConsole ask = new AskUserForQuizIdFromConsole(input)
+//                long id = ask.AskForId();
+//                quizService.findById(id).ifPresent(quiz ->
+//                        new PrintAllQuizFromConsole(List.of())
+//                        );
+//        ));
 
         menu.addMenuItem(new MenuItem(
                 "Koniec",
