@@ -28,9 +28,7 @@ public class GeneratorController {
                 "Wyjdź",
                 Menu.DEFAULT_QUIT
         ));
-
     }
-
     public void start() {
         looper.runLoop();
     }
