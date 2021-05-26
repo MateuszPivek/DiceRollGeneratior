@@ -25,16 +25,16 @@ public class CharacterEntity {
     int characterAge;
 
     //Attributes
-    int strength;
-    int dexterity;
-    int power;
-    int condition;
-    int appearance;
-    int education;
-    int bodySize;
-    int intelligence;
+    int characterStrength;
+    int characterDexterity;
+    int characterPower;
+    int characterCondition;
+    int characterAppearance;
+    int characterEducation;
+    int characterBodySize;
+    int characterIntelligence;
 
-    //Skills
+//    Skills
     int accounting;
     int anthropology;
     int appraise;

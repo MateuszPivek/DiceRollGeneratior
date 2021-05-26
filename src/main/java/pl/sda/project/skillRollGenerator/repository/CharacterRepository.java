@@ -7,6 +7,5 @@ import pl.sda.project.skillRollGenerator.entity.CharacterEntity;
 
 @Repository
 public interface CharacterRepository extends JpaRepository <CharacterEntity, Long> {
-    @Query("SELECT max(q.id) FROM CharacterEntity q")
-    long maxId();
+
 }
