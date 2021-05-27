@@ -27,7 +27,7 @@ public class GeneratorServiceJpa implements GeneratorService{
 
     @Override
     public void removeCharacterById(long id) {
-        //TODO zrobić ifa żeby usuwał postać gdy id jest zgodne ale wyrzucał powiadomienie gdy nie ma postaci o tami id
+        //TODO zrobić ifa żeby usuwał postać gdy id jest zgodne ale wyrzucał powiadomienie gdy nie ma postaci o takim id
         characterRepository.deleteById(id);
     }
 
@@ -44,11 +44,11 @@ public class GeneratorServiceJpa implements GeneratorService{
 
     @Override
     public void attributesRollForCharacterById(long id) {
+        //TODO przerobić metodę aby wyszukiwała konkretne atrybuty i dla nich wykonywać rolla
         int maxRoll = 100;
         int minRoll = 1;
         int randomRoll = (int)(Math.random() * (maxRoll - minRoll) + minRoll);
         System.out.println(characterRepository.findById(id).stream().map(CharacterMapper.INSTANCE::toAttributesRoll).collect(Collectors.toList()));
-
 
     }
 
